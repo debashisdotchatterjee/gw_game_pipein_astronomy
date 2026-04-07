@@ -43,8 +43,7 @@ A typical run produces:
 
 It is recommended to use Python 3.10+ in a clean environment.
 
-```bash
-pip install -r requirements_gw_game_pipeline.txt
+
 
 
 ## Methodological Components
