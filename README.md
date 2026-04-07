@@ -47,32 +47,32 @@ It is recommended to use Python 3.10+ in a clean environment.
 pip install -r requirements_gw_game_pipeline.txt
 
 
-# Methodological Components
+## Methodological Components
 
 The pipeline implements:
 
-- **Sky-map ingestion**  
+- Sky-map ingestion  
   Public event products are downloaded or queried through GWOSC and read using `ligo.skymap`.
 
-- **Candidate tile construction**  
+- Candidate tile construction  
   High-probability tile centers are generated from the sky map.
 
-- **Feasible action library generation**  
+- Feasible action library generation  
   Telescope-specific actions are filtered using visibility windows, observing slots, and instrumental constraints.
 
-- **Detection-weight construction**  
+- Detection-weight construction  
   Each feasible action is assigned a posterior-weighted detection score based on sky probability, coverage, and observability.
 
-- **Scheduling algorithms**  
+- Scheduling algorithms  
   - Proposed decentralized potential-game scheduler  
   - Centralized greedy baseline  
   - Selfish independent greedy baseline  
   - Random feasible baseline
 
-- **Credit allocation**  
+- Credit allocation  
   Realized Shapley values are computed from the final proposed schedule.
 
-- **Output generation**  
+- Output generation  
   Tables, plots, and ZIP bundles are saved automatically.
 
 ---
@@ -94,7 +94,7 @@ All main outputs used in the manuscript can be regenerated from the public data 
 
 # License
 
-This repository is distributed under the **MIT License**.  
+This repository is distributed under the MIT License.  
 See the LICENSE file for details.
 
 ---
@@ -103,9 +103,9 @@ See the LICENSE file for details.
 
 If you use this repository in academic work, please cite the associated manuscript and acknowledge the public data/software ecosystem used in the workflow, especially:
 
-- **GWOSC**  
-- **ligo.skymap**  
-- **astroplan**
+- GWOSC  
+- ligo.skymap  
+- astroplan
 
 ---
 
